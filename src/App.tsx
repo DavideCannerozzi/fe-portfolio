@@ -1,12 +1,11 @@
-import './App.css'
-
+import Home from "./pages/Home/Home";
 
 function App() {
   return (
     <>
-    <h1>Boilerplate Vite + React + TypeScript + Tailwind 4 + PostCSS</h1>
+      <Home />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

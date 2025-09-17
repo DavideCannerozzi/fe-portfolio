@@ -1,1 +1,47 @@
 @import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: JosefinSans-Thin;
+  src: url(../src/assets/fonts/JosefinSans-Thin.ttf);
+  font-family: Roboto-VariableFont_wdth, wght;
+  src: url(../src/assets/fonts/Roboto-VariableFont_wdth\wght.ttf);
+}
+
+@theme {
+  --font-JosefinSans-Thin: JosefinSans-Thin, "sans-serif";
+  --font-Roboto-VariableFont_wdth,wght: Roboto-VariableFont_wdth,
+    wght "sans.serif";
+}
+
+@layer base {
+  h1,
+  hr,
+  .hero-link {
+    font-family: "JosefinSans-Thin", sans-serif;
+    color: #1fd88e;
+  }
+
+  .bg-gradient {
+    background: linear-gradient(to bottom, #222733, #1d5066);
+  }
+
+  h2 {
+    font-family: "JosefinSans-Thin", sans-serif;
+    color: #1fd88e;
+    @apply mb-12 flex items-center gap-3 text-4xl font-semibold;
+  }
+}
+p {
+  font-family: "Roboto-VariableFont_wdth,wght";
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
