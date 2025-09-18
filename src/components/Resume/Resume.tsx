@@ -3,6 +3,11 @@ import "@react-pdf-viewer/core/lib/styles/index.css";
 import Buttons from "../Buttons/Buttons";
 
 export default function Resume() {
+  const handleDownload = () => {
+    if (window.gtag) {
+      window.gtag("event", "Download Resume");
+    }
+  };
   return (
     <section id="resume">
       <h2>
@@ -21,6 +26,7 @@ export default function Resume() {
         <Buttons
           text="Download my Resume"
           href="/davideCannerozzi-resume.pdf"
+          onClick={handleDownload}
         />
       </div>
     </section>

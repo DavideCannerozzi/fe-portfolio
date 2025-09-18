@@ -7,7 +7,7 @@ export default function ArrowTop() {
 
   return (
     <div className="fixed bottom-8 right-8 z-50 cursor-pointer">
-      <ArrowIcon onClick={scrollTop} size={32} aria-label="Scroll To Top" />
+      <ArrowIcon onClick={scrollTop} size={64} aria-label="Scroll To Top" />
     </div>
   );
 }
