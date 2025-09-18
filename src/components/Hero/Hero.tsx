@@ -3,7 +3,7 @@ import Bulldog from "../../assets/bulldog.png";
 export default function Hero() {
   return (
     <div className="text-center mt-10 p-12 min-h-[25vh] max-h-[30vh]">
-      <h1 className="text-8xl">Davide Cannerozzi</h1>
+      <h1 className="text-6xl md:text-8xl">Davide Cannerozzi</h1>
       <p className="mt-6 text-white italic">
         Frontend Developer | React Developer | Freelance
       </p>

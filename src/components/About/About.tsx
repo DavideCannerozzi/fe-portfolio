@@ -17,7 +17,7 @@ export default function About() {
       <p className="mb-6">
         My name is Davide Cannerozzi. I'm a frontend developer & freelance web
         developer passionate about music, cinema, and creating digital
-        experiences. In my free time, I enjoy spending time outdoors in nature.
+        experiences.
       </p>
       <p className="mb-6">
         My journey into web development combines self-taught learning with
@@ -27,8 +27,6 @@ export default function About() {
         collaboration.
       </p>
       <p className="mb-6">
-        I actively contribute to open source projects on GitHub and regularly
-        build new projects to explore new technologies and strengthen my skills.
         I'm always looking for exciting, challenging projects that allow me to
         grow as a developer and create meaningful digital experiences
       </p>
