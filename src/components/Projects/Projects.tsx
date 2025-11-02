@@ -35,8 +35,12 @@ export default function Projects() {
                 Link
               </a>
             </div>
-            <div className="flex-shrink-0 w-100 md:w-140 shadow-xl/30">
-              <img src={project.image} alt={project.description} />
+            <div className="flex-shrink-0 w-full md:w-[35rem] shadow-xl/30">
+              <img
+                src={project.image}
+                alt={project.description}
+                loading="lazy"
+              />
             </div>
           </div>
         ))}
