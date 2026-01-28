@@ -1,6 +1,6 @@
 import ImageOne from "../../assets/work-01.png";
 import ImageTwo from "../../assets/work-02.png";
-import ImageThree from "../../assets/work-in-progress.png";
+import ImageThree from "../../assets/fetchapilab.png";
 
 export interface ProjectsData {
   id: number;
@@ -30,10 +30,10 @@ const projects: ProjectsData[] = [
   },
   {
     id: 2,
-    name: "Work In Progress",
-    description: "Working on a React project",
-    tools: ["React.js", "Tailwind"],
-    link: "#",
+    name: "Fetch Api Lab",
+    description: "A project to explore public APIs dynamically.",
+    tools: ["React.js", "Typescript", "Tailwind"],
+    link: "https://fetchlabapi.netlify.app/",
     image: ImageThree,
   },
 ];

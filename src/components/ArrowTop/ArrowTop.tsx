@@ -6,8 +6,12 @@ export default function ArrowTop() {
   const ArrowIcon: IconType = LuCircleArrowUp;
 
   return (
-    <div className="fixed bottom-8 right-8 z-50 cursor-pointer">
-      <ArrowIcon onClick={scrollTop} size={64} aria-label="Scroll To Top" />
-    </div>
+    <button
+      onClick={scrollTop}
+      className="fixed bottom-8 right-8 z-50 bg-transparent border-none p-0 cursor-pointer hover:opacity-80 transition-opacity"
+      aria-label="Scroll to top of page"
+    >
+      <ArrowIcon size={64} aria-hidden="true" />
+    </button>
   );
 }

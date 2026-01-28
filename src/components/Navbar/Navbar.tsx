@@ -16,23 +16,26 @@ export default function Navbar() {
       </div>
 
       {/* Toggle Hamburger Menu */}
-      <div className="md:hidden">
+      <button
+        className="md:hidden bg-transparent border-none p-0"
+        onClick={() => setIsOpen(!isOpen)}
+        aria-label={isOpen ? "Close navigation menu" : "Open navigation menu"}
+        aria-expanded={isOpen}
+        aria-controls="mobile-menu"
+      >
         {isOpen ? (
-          <ClosedMenu
-            className="text-2xl cursor-pointer"
-            onClick={() => setIsOpen(!isOpen)}
-          />
+          <ClosedMenu className="text-2xl" />
         ) : (
-          <HamburgerMenu
-            className="text-2xl cursor-pointer"
-            onClick={() => setIsOpen(!isOpen)}
-          />
+          <HamburgerMenu className="text-2xl" />
         )}
-      </div>
+      </button>
 
       {/* Menu mobile */}
       {isOpen && (
-        <div className="absolute top-full left-0 w-full md:hidden shadow-lg z-50">
+        <div
+          id="mobile-menu"
+          className="absolute top-full left-0 w-full md:hidden shadow-lg z-50"
+        >
           <NavLink />
         </div>
       )}

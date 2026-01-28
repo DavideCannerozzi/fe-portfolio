@@ -37,10 +37,12 @@ export default function About() {
             href="https://www.linkedin.com/in/davide-cannerozzi-developer/"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Visit my LinkedIn profile"
           >
             <LinkedinIcon
               size={48}
               className="text-blue-800 cursor-pointer mt-6 md:mt-0"
+              aria-hidden="true"
             />
           </a>
         </div>

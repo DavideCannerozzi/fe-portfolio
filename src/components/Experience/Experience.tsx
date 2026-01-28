@@ -5,7 +5,7 @@ export default function Experience() {
   return (
     <section id="experience" className="flex flex-col overflow-x-hidden px-4">
       <h2>
-        <span role="img" aria-label="experience">
+        <span role="img" aria-label="briefcase emoji">
           💼
         </span>
         Experience
@@ -17,7 +17,7 @@ export default function Experience() {
             className="relative mb-10 border-amber-950 border-4 p-3 md:p-6 w-full max-w-full md:max-w-2xl"
           >
             <div className="absolute -left-9 top-4 w-6 h-6 bg-white border-4 border-amber-600 rounded-full"></div>
-            <h3 className="text-xl font-semibold mb-4 text-orange-400">
+            <h3 className="text-xl font-semibold mb-4 text-orange-600">
               {exp.year}
             </h3>
             <span className="italic">{exp.company}</span>

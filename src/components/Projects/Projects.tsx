@@ -31,8 +31,9 @@ export default function Projects() {
               <a
                 className="border-b-2 border-b-orange-400 inline-block mt-12"
                 href={project.link}
+                aria-label={`View ${project.name} project`}
               >
-                Link
+                View Project
               </a>
             </div>
             <div className="flex-shrink-0 w-full md:w-[35rem] shadow-xl/30">
