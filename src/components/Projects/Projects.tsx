@@ -32,6 +32,8 @@ export default function Projects() {
                 className="border-b-2 border-b-orange-400 inline-block mt-12"
                 href={project.link}
                 aria-label={`View ${project.name} project`}
+                target="_blank"
+                rel="noopener"
               >
                 View Project
               </a>
