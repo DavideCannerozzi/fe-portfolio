@@ -18,14 +18,14 @@ export default function Resume() {
       </h2>
       <div className="w-full max-w-[800px] h-[600px] border border-gray-300 shadow-xl">
         <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.4.120/build/pdf.worker.min.js">
-          <Viewer fileUrl="/cv_CannerozziDavideFE01.pdf" />
+          <Viewer fileUrl="/DavideCannerozziFE_eng.pdf" />
         </Worker>
       </div>
 
       <div className="flex justify-center mt-12">
         <Buttons
           text="Download my Resume"
-          href="/cv_CannerozziDavideFE01.pdf"
+          href="/DavideCannerozziFE_eng.pdf"
           onClick={handleDownload}
         />
       </div>
