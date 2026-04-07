@@ -2,6 +2,7 @@ import ImageOne from "../../assets/work-01.png";
 import ImageTwo from "../../assets/work-02.png";
 import ImageThree from "../../assets/fetchapilab.png";
 import ImageFour from "../../assets/snippetLint.png";
+import ImageFive from "../../assets/stream-radar.png";
 
 export interface ProjectsData {
   id: number;
@@ -9,7 +10,7 @@ export interface ProjectsData {
   description: string;
   tools: string[];
   link: string;
-  image: string;
+  image?: string;
 }
 
 const projects: ProjectsData[] = [
@@ -51,6 +52,15 @@ const projects: ProjectsData[] = [
     tools: ["React.js", "Typescript", "Tailwind"],
     link: "https://snippetlint.netlify.app/",
     image: ImageFour,
+  },
+  {
+    id: 4,
+    name: "Stream Radar",
+    description:
+      "StreamRadar is a React + TypeScript application that lets you upload your IMDB watchlist and automatically checks which films are available on Italian streaming platforms",
+    tools: ["React.js", "Typescript", "Tailwind"],
+    link: "https://streamradarimdb.netlify.app/",
+    image: ImageFive,
   },
 ];
 
