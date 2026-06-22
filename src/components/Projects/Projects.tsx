@@ -18,7 +18,7 @@ export default function Projects() {
             className="flex flex-col-reverse md:flex-row justify-between mt-10"
           >
             <div className="h-[20rem] p-12 w-[40rem]">
-              <h3 className="text-3xl text-orange-400">{project.name}</h3>
+              <h3>{project.name}</h3>
               <p className="text-gray-900 italic mt-3">{project.description}</p>
               <p className="mt-4 mb-4">Development Tools:</p>
               <ul>

@@ -27,7 +27,7 @@ body {
   hr,
   .hero-link {
     font-family: "JosefinSans-Thin", sans-serif;
-    color: #1fd88e;
+    color: #158f6a;
   }
 
   .bg-gradient {
@@ -36,9 +36,16 @@ body {
 
   h2 {
     font-family: "JosefinSans-Thin", sans-serif;
-    color: #3dd9a0;
+    color: #1f9d75;
     @apply mb-12 flex items-center gap-3 text-4xl font-semibold;
   }
+}
+
+h3 {
+  font-family: "JosefinSans-Thin", sans-serif;
+  color: #9a3412;
+  font-size: 1.875rem;
+  font-weight: 600;
 }
 p {
   font-family: "Roboto-VariableFont_wdth,wght";
