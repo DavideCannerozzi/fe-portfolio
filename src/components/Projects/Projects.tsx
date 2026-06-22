@@ -17,7 +17,7 @@ export default function Projects() {
             key={project.id}
             className="flex flex-col-reverse md:flex-row justify-between mt-10"
           >
-            <div className="h-[20rem] p-12 w-[40rem]">
+            <div className="p-12 w-full md:w-[40rem]">
               <h3>{project.name}</h3>
               <p className="text-gray-900 italic mt-3">{project.description}</p>
               <p className="mt-4 mb-4">Development Tools:</p>
