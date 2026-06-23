@@ -4,22 +4,28 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  font-family: "JosefinSans-Thin", sans-serif;
+}
+
 html,
 body {
   overflow-x: hidden;
 }
 
 @font-face {
-  font-family: JosefinSans-Thin;
-  src: url(../src/assets/fonts/JosefinSans-Thin.ttf);
-  font-family: Roboto-VariableFont_wdth, wght;
-  src: url(../src/assets/fonts/Roboto-VariableFont_wdth\wght.ttf);
+  font-family: "JosefinSans-Thin";
+  src: url("/fonts/JosefinSans-Thin.ttf") format("truetype");
 }
 
-@theme {
-  --font-JosefinSans-Thin: JosefinSans-Thin, "sans-serif";
-  --font-Roboto-VariableFont_wdth,wght:
-    Roboto-VariableFont_wdth, wght "sans.serif";
+@font-face {
+  font-family: "InterVariable";
+  src: url("/fonts/InterVariable.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "RobotoVariable";
+  src: url("/fonts/Roboto-VariableFont.ttf") format("truetype");
 }
 
 @layer base {
@@ -48,7 +54,7 @@ h3 {
   font-weight: 600;
 }
 p {
-  font-family: "Roboto-VariableFont_wdth,wght";
+  font-family: "InterVariable", sans-serif;
   font-size: 1.1rem;
   line-height: 1.6;
 }
