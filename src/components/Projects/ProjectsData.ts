@@ -1,8 +1,8 @@
-import ImageOne from "../../assets/work-01.png";
-import ImageTwo from "../../assets/work-02.png";
-import ImageThree from "../../assets/fetchapilab.png";
-import ImageFour from "../../assets/snippetLint.png";
-import ImageFive from "../../assets/stream-radar.png";
+import ImageOne from "../../assets/work-01.webp";
+import ImageTwo from "../../assets/work-02.webp";
+import ImageThree from "../../assets/fetchapilab.webp";
+import ImageFour from "../../assets/snippetLint.webp";
+import ImageFive from "../../assets/stream-radar.webp";
 
 export interface ProjectsData {
   id: number;

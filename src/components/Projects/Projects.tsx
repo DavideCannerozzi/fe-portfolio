@@ -38,11 +38,12 @@ export default function Projects() {
                 View Project
               </a>
             </div>
-            <div className="flex-shrink-0 w-full md:w-[35rem] shadow-xl/30">
+            <div className="flex-shrink-0 w-full md:w-[35rem] h-[250px] md:h-[350px] shadow-xl/30">
               <img
                 src={project.image}
                 alt={project.description}
                 loading="lazy"
+                className="w-full h-full object-cover object-center"
               />
             </div>
           </div>
