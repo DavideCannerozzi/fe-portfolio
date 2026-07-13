@@ -3,6 +3,7 @@ import ImageTwo from "../../assets/work-02.webp";
 import ImageThree from "../../assets/fetchapilab.webp";
 import ImageFour from "../../assets/snippetLint.webp";
 import ImageFive from "../../assets/stream-radar.webp";
+import ImageSix from "../../assets/PdfTangler.webp";
 
 export interface ProjectsData {
   id: number;
@@ -61,6 +62,15 @@ const projects: ProjectsData[] = [
     tools: ["React.js", "Typescript", "Tailwind"],
     link: "https://streamradarimdb.netlify.app/",
     image: ImageFive,
+  },
+  {
+    id: 5,
+    name: "PdfTangler - Open Source Project",
+    description:
+      "3 open source contributions: improved accessibility raising Lighthouse score from 94 to 100, added loading indicators during PDF merge, and fixed horizontal drag animation on mobile.",
+    tools: ["React.js", "JavaScript", "Tailwind"],
+    link: "https://github.com/ManojKumarAchanta/PdfTangler",
+    image: ImageSix,
   },
 ];
 
