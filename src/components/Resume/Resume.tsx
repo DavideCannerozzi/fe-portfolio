@@ -5,7 +5,7 @@ import Buttons from "../Buttons/Buttons";
 export default function Resume() {
   const openResume = () => {
     if (window.gtag) {
-      window.gtag("event", "Open Resume");
+      window.gtag("event", "open_resume");
     }
   };
   return (
