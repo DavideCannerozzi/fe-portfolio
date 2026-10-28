@@ -9,7 +9,7 @@ export default function ArrowTop() {
     <button
       onClick={scrollTop}
       className="fixed bottom-8 right-8 z-50 bg-transparent border-none p-0 cursor-pointer hover:opacity-80 transition-opacity"
-      aria-label="Scroll to top of page"
+      aria-label="Scroll To Top"
     >
       <ArrowIcon size={64} aria-hidden="true" />
     </button>

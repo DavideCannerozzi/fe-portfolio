@@ -7,16 +7,10 @@ vi.mock("../Buttons/Buttons", () => {
     href: string;
     text: string;
     target?: string;
-    className?: string;
   };
 
-  const MockButton = ({ href, text, target, className }: MockButtonProps) => (
-    <a
-      data-testid="external-button"
-      href={href}
-      target={target}
-      className={className}
-    >
+  const MockButton = ({ href, text, target }: MockButtonProps) => (
+    <a data-testid="external-button" href={href} target={target}>
       {text}
     </a>
   );
@@ -59,7 +53,7 @@ describe("NavLinks", () => {
     expect(external).toBeInTheDocument();
     expect(external).toHaveAttribute(
       "href",
-      "https://github.com/DavideCannerozzi"
+      "https://github.com/DavideCannerozzi",
     );
     expect(external).toHaveAttribute("target", "_blank");
     expect(external).toHaveTextContent("GitHub");
@@ -80,7 +74,7 @@ describe("NavLinks", () => {
       "text-xl",
       "bg-white",
       "md:bg-transparent",
-      "items-center"
+      "items-center",
     );
   });
 });

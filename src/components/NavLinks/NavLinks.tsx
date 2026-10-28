@@ -8,12 +8,7 @@ export default function NavLinks() {
       {navLinks.map((link: navLinksData) => (
         <li key={link.id}>
           {link.external ? (
-            <Buttons
-              href={link.href}
-              text={link.text}
-              target="_blank"
-              className="px-3 py-1"
-            />
+            <Buttons href={link.href} text={link.text} target="_blank" />
           ) : (
             <a href={link.href} className="px-3 py-1">
               {link.text}
