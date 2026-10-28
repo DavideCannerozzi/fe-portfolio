@@ -16,16 +16,14 @@ body {
 @font-face {
   font-family: "JosefinSans-Thin";
   src: url("/fonts/JosefinSans-Thin.ttf") format("truetype");
+  font-display: swap;
 }
 
 @font-face {
-  font-family: "InterVariable";
-  src: url("/fonts/InterVariable.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "RobotoVariable";
-  src: url("/fonts/Roboto-VariableFont.ttf") format("truetype");
+  font-family: "SourceSans3";
+  src: url("/fonts/SourceSans3-VariableFont.ttf") format("truetype");
+  font-weight: 200 900;
+  font-display: swap;
 }
 
 @layer base {
@@ -54,7 +52,7 @@ h3 {
   font-weight: 600;
 }
 p {
-  font-family: "InterVariable", sans-serif;
+  font-family: "SourceSans3", sans-serif;
   font-size: 1.1rem;
   line-height: 1.6;
 }
