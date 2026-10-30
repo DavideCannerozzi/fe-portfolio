@@ -4,6 +4,12 @@
   transform-origin: 70% 70%;
 }
 
+@media (prefers-reduced-motion: reduce) {
+  .greeting {
+    animation: none;
+  }
+}
+
 @keyframes wave-animation {
   0% {
     transform: rotate(0deg);
