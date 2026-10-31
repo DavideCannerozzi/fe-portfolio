@@ -1,11 +1,11 @@
-export interface navLinksData {
+export interface NavLinksData {
   id: number;
   text: string;
   href: string;
   external?: boolean;
 }
 
-const navLinks: navLinksData[] = [
+const navLinks: NavLinksData[] = [
   { id: 0, text: "About me", href: "#about" },
   { id: 1, text: "Experience", href: "#experience" },
   { id: 2, text: "Projects", href: "#projects" },
