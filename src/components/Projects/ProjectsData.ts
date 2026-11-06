@@ -11,7 +11,7 @@ export interface ProjectsData {
   description: string;
   tools: string[];
   link: string;
-  image?: string;
+  image: string;
 }
 
 const projects: ProjectsData[] = [

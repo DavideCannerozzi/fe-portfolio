@@ -2,7 +2,16 @@ import { LuCircleArrowUp } from "react-icons/lu";
 import type { IconType } from "react-icons";
 
 export default function ArrowTop() {
-  const scrollTop = (): void => window.scrollTo({ top: 0, behavior: "smooth" });
+  const scrollTop = (): void => {
+    const prefersReducedMotion = window.matchMedia(
+      "(prefers-reduced-motion: reduce)",
+    ).matches;
+
+    window.scrollTo({
+      top: 0,
+      behavior: prefersReducedMotion ? "auto" : "smooth",
+    });
+  };
   const ArrowIcon: IconType = LuCircleArrowUp;
 
   return (
