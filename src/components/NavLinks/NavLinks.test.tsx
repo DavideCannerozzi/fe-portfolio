@@ -65,15 +65,15 @@ describe("NavLinks", () => {
     expect(list).toHaveClass(
       "flex",
       "flex-col",
-      "md:flex-row",
+      "lg:flex-row",
       "gap-12",
-      "md:gap-20",
+      "lg:gap-20",
       "text-black",
-      "md:text-white",
+      "lg:text-white",
       "font-JosefinSans-Thin",
       "text-xl",
       "bg-white",
-      "md:bg-transparent",
+      "lg:bg-transparent",
       "items-center",
     );
   });

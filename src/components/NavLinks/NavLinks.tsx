@@ -4,7 +4,7 @@ import Buttons from "../Buttons/Buttons";
 
 export default function NavLinks() {
   return (
-    <ul className="flex flex-col md:flex-row gap-12 md:gap-20 text-black md:text-white font-JosefinSans-Thin text-xl bg-white md:bg-transparent items-center">
+    <ul className="flex flex-col lg:flex-row gap-12 lg:gap-20 text-black lg:text-white font-JosefinSans-Thin text-xl bg-white lg:bg-transparent items-center">
       {navLinks.map((link: NavLinksData) => (
         <li key={link.id}>
           {link.external ? (

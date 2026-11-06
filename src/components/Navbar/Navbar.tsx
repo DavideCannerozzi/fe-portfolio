@@ -10,14 +10,14 @@ export default function Navbar() {
   const ClosedMenu: IconType = AiOutlineClose;
 
   return (
-    <nav className="flex items-center p-8 relative bg-white md:bg-transparent">
-      <div className="hidden md:flex flex-1 justify-center">
+    <nav className="flex items-center p-8 relative bg-white lg:bg-transparent">
+      <div className="hidden lg:flex flex-1 justify-center">
         <NavLink />
       </div>
 
       {/* Toggle Hamburger Menu */}
       <button
-        className="md:hidden bg-transparent border-none p-0"
+        className="lg:hidden bg-transparent border-none p-0"
         onClick={() => setIsOpen(!isOpen)}
         aria-label={isOpen ? "Close navigation menu" : "Open navigation menu"}
         aria-expanded={isOpen}
@@ -34,7 +34,7 @@ export default function Navbar() {
       {isOpen && (
         <div
           id="mobile-menu"
-          className="absolute top-full left-0 w-full md:hidden shadow-lg z-50"
+          className="absolute top-full left-0 w-full lg:hidden bg-white pb-12 shadow-lg z-50"
         >
           <NavLink />
         </div>
